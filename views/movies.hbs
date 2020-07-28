@@ -1,0 +1,10 @@
+<h2>Ironhack Cinema</h2>
+
+<p>Click on the movie to check the showtime!</p>
+
+
+{{#each celebrity}}
+<p>{{this.title}}</p>
+<img src="{{this.image}}" alt="">
+<a href="/views/moviesdetails.hbs">See More</a>
+{{/each}}

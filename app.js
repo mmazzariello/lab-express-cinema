@@ -16,8 +16,11 @@ const debug = require('debug')(
 
 const app = express();
 
+//prueba
+
 // require database configuration
 require('./configs/db.config');
+//
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -39,7 +42,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const movies = require('./routes/movies');
-app.use('/', movies);
+app.use('/movies', movies);
 
 
 module.exports = app;
